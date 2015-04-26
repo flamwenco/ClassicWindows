@@ -11,6 +11,7 @@
 		9E30F1051A807E38008AFAFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E30F1041A807E38008AFAFA /* Images.xcassets */; };
 		9E30F1081A807E38008AFAFA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E30F1061A807E38008AFAFA /* MainMenu.xib */; };
 		9E30F1141A807E38008AFAFA /* Classic_WindowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30F1131A807E38008AFAFA /* Classic_WindowsTests.swift */; };
+		9E59AC301A809A6500F53DD4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9E59AC2F1A809A6500F53DD4 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9E59AC8C1A809DF500F53DD4 /* Copy Helper App */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			name = "Copy Helper App";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9E30F0FD1A807E38008AFAFA /* Classic Windows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Windows.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E30F1011A807E38008AFAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +46,7 @@
 		9E30F10D1A807E38008AFAFA /* Classic WindowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Classic WindowsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E30F1121A807E38008AFAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E30F1131A807E38008AFAFA /* Classic_WindowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classic_WindowsTests.swift; sourceTree = "<group>"; };
+		9E59AC2F1A809A6500F53DD4 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9E30F1011A807E38008AFAFA /* Info.plist */,
+				9E59AC2F1A809A6500F53DD4 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -116,6 +132,7 @@
 				9E30F0F91A807E38008AFAFA /* Sources */,
 				9E30F0FA1A807E38008AFAFA /* Frameworks */,
 				9E30F0FB1A807E38008AFAFA /* Resources */,
+				9E59AC8C1A809DF500F53DD4 /* Copy Helper App */,
 			);
 			buildRules = (
 			);
@@ -155,6 +172,11 @@
 				TargetAttributes = {
 					9E30F0FC1A807E38008AFAFA = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					9E30F10C1A807E38008AFAFA = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -187,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E30F1051A807E38008AFAFA /* Images.xcassets in Resources */,
+				9E59AC301A809A6500F53DD4 /* Credits.rtf in Resources */,
 				9E30F1081A807E38008AFAFA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = "Classic Windows/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -393,6 +417,7 @@
 				9E30F1191A807E38008AFAFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E30F11A1A807E38008AFAFA /* Build configuration list for PBXNativeTarget "Classic WindowsTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +426,7 @@
 				9E30F11C1A807E38008AFAFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
